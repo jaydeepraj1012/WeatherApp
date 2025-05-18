@@ -18,7 +18,7 @@ function WeatherApp() {
     }
     setLoading(true);
     const responsive = await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=1b826af1512a497383780834251505&q=${city}`
+      `https://api.weatherapi.com/v1/current.json?key=1b826af1512a497383780834251505&q=${city}`
     );
     const wheatherData = await responsive.json();
     if (wheatherData.error) {
